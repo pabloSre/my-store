@@ -19,6 +19,7 @@ const options = {
     }
   }
 }
+app.use(cors(options));
 
 app.get('/api', (req, res) => {
   res.send('Hola mi server en express');
